@@ -1,0 +1,12 @@
+<app-header></app-header>
+<a
+  class="bg-primary btn-lg-square rounded-full back-to-top"
+  (click)="scrollToTop()"
+  *ngIf="showScrollToTop"
+  ><i class="fa fa-arrow-up text-white"></i
+></a>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
